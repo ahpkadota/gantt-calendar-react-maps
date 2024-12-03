@@ -1,3 +1,5 @@
+REACT GANTT CALENDAR (or whatever)
+
 This project pulls event data with location and dates from google sheets and displays it in a timeline and a map.
 It was designed to plan itineraries along a schedule. 
 
@@ -7,4 +9,4 @@ Needs a google API key with Maps permission.
 
 
 LIVE DEMO: https://ahpkadota.github.io/gantt-calendar-react-maps/
-
+Sample spreadsheet: https://docs.google.com/spreadsheets/d/1yTbALjVCCWi9tnW7W2Pq0sZrJAgdJqyCna55PYarfWo/edit?usp=sharing
