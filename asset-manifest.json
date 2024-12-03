@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gantt-calendar-react-maps/static/css/main.26e0fe60.css",
-    "main.js": "/gantt-calendar-react-maps/static/js/main.e23cbf05.js",
+    "main.js": "/gantt-calendar-react-maps/static/js/main.97eeeeb6.js",
     "static/media/hamburger.png": "/gantt-calendar-react-maps/static/media/hamburger.6e4ad84549d0bb0f0ac9.png",
     "index.html": "/gantt-calendar-react-maps/index.html",
     "main.26e0fe60.css.map": "/gantt-calendar-react-maps/static/css/main.26e0fe60.css.map",
-    "main.e23cbf05.js.map": "/gantt-calendar-react-maps/static/js/main.e23cbf05.js.map"
+    "main.97eeeeb6.js.map": "/gantt-calendar-react-maps/static/js/main.97eeeeb6.js.map"
   },
   "entrypoints": [
     "static/css/main.26e0fe60.css",
-    "static/js/main.e23cbf05.js"
+    "static/js/main.97eeeeb6.js"
   ]
 }
