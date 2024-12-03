@@ -1,0 +1,22 @@
+/* App.css */
+.main-content {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black
+}
+
+.chart-container {
+  width: 50vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 10px;
+  padding-bottom: 10px;  
+}
+

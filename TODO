@@ -1,0 +1,21 @@
+DONE - If an event spans two of more days, there should be as many event blocks in the chart as days. The idea is that the event block should be the same, but divided into three for the sake of dealing with different charts. for example, if an event lasts from 14/12/2024 16:40:00 to 16/12/2024 12:00:00, there should be 3 blocks; 
+    - one from 14/12/2024 16:40:00 to 14/12/2024 23:59:59
+    - one from 15/12/2024 00:00:00 to 15/12/2024 23:59:59
+    - one from 16/12/2024 00:00:00 to 16/12/2024 12:00:00
+DONE - In such cases, only the first and last blocks are resizable
+- When resizing, draggin the resize handle to the top or the bottom of the chart will set the start/end time to the next/previous date. for example, dragging the top of the 14/12/2024 16:40:00 to 16/12/2024 12:00:00 block to the bottom of the chart will set the new start date to 15/12/2024 00:00:00, and eliminate the first block. likewise, if we drag it to the top of the chart, a new block should be created at 13/12/2024 23:45:00 to 13/12/2024 23:59:59
+- All events with a larger startDate than the endDate should be filtered out, as it makes no sense that an event ends before it starts, and is probably a typo.
+- while dragging an event, we should be able to see a "shadow" of the event. this shadow will be snapped to the chart, to preview the position where it should land.
+DONE - Overlapping events should have different widths; if there is an overlapping event, the later event blocks should have increasingly lower width values.
+DONE - If there is a date or dates between two events that doesn't have any events in them, the corresponding day  
+DONE - Both in Sidebar and timelines, when selecting an event, the event block and card should come into view. 
+DONE - Whenever I click on an open slot inDayTimeline, a new eventitem block should be created, with starttime at the selected position, and with 1h duration. Title should be "Untitled".
+DONE- When double clicking on an eventitem block, the description text should become editable. Clicking outside of the block will cancel this edit mode. If any changes were made, a "save" and a "cancel" button should appear to the bottom right corner of the block, and should act as expected. 
+DONE - When double clicking on a sidebar card, the description text should become editable. Clicking outside of the block will cancel this edit mode. If any changes were made, a "save" and a "cancel" button should appear to the bottom right corner of the block, and should act as expected.  
+- At the top of the sidebar, there should be a "sync" button, that will update the data from the spreadsheet with the data from our app. 
+
+
+
+BUGS:
+- Add deselect when clicking any element other than the currently selected element
+DONE - Resize handles disappear when event are too small

@@ -1,0 +1,214 @@
+/* Sidebar.module.css */
+.sidebar {
+  background-color: #f9f9f9;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  border-top: 1px solid black
+
+}
+
+.eventList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.eventCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  transition: box-shadow 0.3s;
+}
+
+.eventCard:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.selectedEventCard {
+  border: 2px solid #2196f3;
+  background-color: #e3f2fd;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.badge {
+  padding: 2px 5px;
+  border-radius: 8px;
+  font-size: 0.6rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 1px solid #b4b4b4;
+  background-color: grey;
+}
+.description {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.time {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guestsContainer {
+  display: flex;
+  gap: 5px;
+  max-width: 70%;
+  overflow: hidden;
+}
+
+.guestBadge {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.websiteButton {
+  background-color: #2196f3;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.websiteButton:hover {
+  background-color: #0b79d0;
+}
+
+.locationButton {
+  background-color: transparent;
+  color: #f44336;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.locationButton:hover {
+  color: #d32f2f;
+}
+
+.editableCard input,
+.editableCard textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editableCard textarea {
+  resize: vertical;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.buttonContainer button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.buttonContainer button:first-child {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.buttonContainer button:last-child {
+  background-color: #f44336;
+  color: #fff;
+}
+.tabBar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+.activeTab {
+  border-bottom: 2px solid #2196f3;
+  font-weight: bold;
+}
+
+.tabContent {
+  padding: 10px;
+}
+.foodCard {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.foodTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.foodWebsite {
+  display: block;
+  margin: 10px 0;
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.foodWebsite:hover {
+  text-decoration: underline;
+}
+
+.foodLocation {
+  font-size: 14px;
+  color: #555;
+}

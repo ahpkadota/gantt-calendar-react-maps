@@ -1,0 +1,69 @@
+/* components/MultiDayTimeline.module.css */
+.multiDayTimeline {
+  display: flex;
+  height: 100%;
+}
+
+.timelineWrapper {
+  display: flex;
+}
+
+.yAxis {
+  position: sticky; /* Keeps the Y-axis fixed during horizontal scrolling */
+  left: 0;
+  top: 0;
+  z-index: 2; /* Ensures the Y-axis stays above the timelines */
+  width: 50px;
+  background-color: #f1f1f1;
+  flex-shrink: 0;
+  border-top: 1px solid #e0e0e0;
+
+}
+
+.yAxisHeader {
+  height: 40px; /* Same height as DayTimeline header */
+  background-color: #f1f1f1;
+}
+
+.yAxisContent {
+  position: relative;
+  height: calc(100% - 40px); /* Subtract header height */
+}
+
+.timeLabel {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  transform: translateY(-50%);
+}
+
+.yAxisGrid {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+}
+
+.gridLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dayTimelinesContainer {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  gap: 5px;
+  flex-direction: row;
+}
+.dayTimeline {
+  min-width: 200px; /* Adjust as needed */
+  flex-shrink: 0; /* Prevent shrinking */
+}

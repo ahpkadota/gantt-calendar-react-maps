@@ -1,0 +1,44 @@
+/* EventItem.module.css */
+
+.eventItem {
+  position: absolute; /* Ensure absolute positioning within the parent */
+  background-color: lightblue;
+  border: 1px solid #2196F3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.eventItem:hover {
+  cursor: move;
+}
+.selectedEvent {
+  border: 2px solid #2196F3; /* Highlight border */
+  background-color: #e3f2fd; /* Light blue background */
+}
+.eventContent {
+  width: 100%;
+  height: 100%;
+}
+
+.resizeHandle {
+  height: 4px;
+  width: 10%;
+  background-color: darkblue;
+  opacity: 10%;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.resizeHandleTop {
+  cursor: ns-resize;
+  top: -1px;
+  border-top-right-radius: 4px;
+}
+
+.resizeHandleBottom {
+  cursor: ns-resize;
+  bottom: -1px;
+  border-bottom-right-radius: 4px;
+}
