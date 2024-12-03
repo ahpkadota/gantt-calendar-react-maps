@@ -11,3 +11,5 @@ Needs a google API key with Maps permission.
 LIVE DEMO: https://ahpkadota.github.io/gantt-calendar-react-maps/
 
 Sample spreadsheet: https://docs.google.com/spreadsheets/d/1yTbALjVCCWi9tnW7W2Pq0sZrJAgdJqyCna55PYarfWo/edit?usp=sharing
+
+Created using React.js, react-dnd, react-google-maps (https://github.com/JustFly1984/react-google-maps-api) and others.
